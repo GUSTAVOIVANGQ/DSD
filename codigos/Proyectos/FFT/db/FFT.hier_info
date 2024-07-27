@@ -1,0 +1,7 @@
+|FFT
+clk_i => q_o~reg0.CLK
+rst_i => q_o~reg0.ACLR
+t_i => q_o~reg0.ENA
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

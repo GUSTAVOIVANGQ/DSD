@@ -1,0 +1,16 @@
+/*
+	Proyecto:	Tarjeta
+	Archivo:		FDD_FPGA.V
+	Descripcion: Descripcion de un Flip Flop D en un FPGA
+					 Entrada en serie-Salida en serie
+	Asignatura:	DSD
+	Prof: 		Toño
+	Equipo:		Luis Gerardo Herrera Avila
+*/
+
+module T(
+	input	clk_i,
+	input rst_i,
+	input d_i,
+	output q_o
+);

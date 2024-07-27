@@ -1,0 +1,46 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\altera\13.0sp1\DSD_4CV5\Proyectos\count\simulation\modelsim
+vcount
+Ig?VAkB?;k>T_cd8`@`Zo90
+V^KPSPz7JdKDEl=XGiXo5k2
+Z1 dD:\altera\13.0sp1\DSD_4CV5\Proyectos\count\simulation\modelsim
+w1715027748
+8D:/altera/13.0sp1/DSD_4CV5/Proyectos/count/count.v
+FD:/altera/13.0sp1/DSD_4CV5/Proyectos/count/count.v
+L0 15
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 0oY]Lz?J@lD4TY_mJbfkh1
+!s85 0
+!s108 1715028047.101000
+!s107 D:/altera/13.0sp1/DSD_4CV5/Proyectos/count/count.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/count|D:/altera/13.0sp1/DSD_4CV5/Proyectos/count/count.v|
+!s101 -O0
+Z4 !s92 -vlog01compat -work work +incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/count -O0
+vDivFreq
+!i10b 1
+!s100 @J8^iVhnoH@A2Y9iGL=J63
+I>k;1Tm>>nOhn?[:TneQSQ0
+V^^JHF<`Qn8`A1DRGTPCU51
+R1
+w1715027713
+8D:/altera/13.0sp1/DSD_4CV5/Proyectos/count/DivFreq .v
+FD:/altera/13.0sp1/DSD_4CV5/Proyectos/count/DivFreq .v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1715028047.557000
+!s107 D:/altera/13.0sp1/DSD_4CV5/Proyectos/count/DivFreq .v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/count|D:/altera/13.0sp1/DSD_4CV5/Proyectos/count/DivFreq .v|
+!s101 -O0
+R3
+R4
+n@div@freq

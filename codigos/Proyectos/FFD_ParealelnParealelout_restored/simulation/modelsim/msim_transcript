@@ -1,0 +1,55 @@
+# Reading D:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do FFD_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_restored {D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_restored/FFD.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FFD
+# 
+# Top level modules:
+# 	FFD
+# vlog -vlog01compat -work work +incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_restored {D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_restored/DivFreq.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DivFreq
+# 
+# Top level modules:
+# 	DivFreq
+# vlog -vlog01compat -work work +incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_restored {D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_restored/FDD_FPGA.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FDD_FPGA
+# ** Error: D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_restored/FDD_FPGA.v(38): near ")": syntax error, unexpected ')', expecting .* or '.'
+# ** Error: D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_restored/FDD_FPGA.v(55): near ")": syntax error, unexpected ')', expecting .* or '.'
+# ** Error: D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_restored/FDD_FPGA.v(72): near ")": syntax error, unexpected ')', expecting .* or '.'
+# ** Error: D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_restored/FDD_FPGA.v(89): near ")": syntax error, unexpected ')', expecting .* or '.'
+# -- Compiling module FDD_FPGA_tv
+# ** Error: D:/altera/13.0sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./FFD_run_msim_rtl_verilog.do line 10
+# D:/altera/13.0sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -vlog01compat -work work +incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_restored {D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD..."
+vsim -voptargs=+acc work.FDD_FPGA_tv
+# vsim -voptargs=+acc work.FDD_FPGA_tv 
+# Loading work.FDD_FPGA_tv
+# ** Error: (vsim-3033) D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_restored/FDD_FPGA.v(149): Instantiation of 'FDD_FPGA' failed. The design unit was not found.
+# 
+#         Region: /FDD_FPGA_tv
+#         Searched libraries:
+#             D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_restored/simulation/modelsim/rtl_work
+# Error loading design
+vsim -voptargs=+acc work.FDD_FPGA_tv
+# vsim -voptargs=+acc work.FDD_FPGA_tv 
+# Loading work.FDD_FPGA_tv
+# ** Error: (vsim-3033) D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_restored/FDD_FPGA.v(149): Instantiation of 'FDD_FPGA' failed. The design unit was not found.
+# 
+#         Region: /FDD_FPGA_tv
+#         Searched libraries:
+#             D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_restored/simulation/modelsim/rtl_work
+# Error loading design

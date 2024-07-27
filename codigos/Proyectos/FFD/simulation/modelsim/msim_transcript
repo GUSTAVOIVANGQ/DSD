@@ -1,0 +1,60 @@
+# Reading D:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do FFD_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD {D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD/FFD.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FFD
+# 
+# Top level modules:
+# 	FFD
+# vlog -vlog01compat -work work +incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD {D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD/DivFreq.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DivFreq
+# 
+# Top level modules:
+# 	DivFreq
+# vlog -vlog01compat -work work +incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD {D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD/FDD_FPGA.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FDD_FPGA
+# -- Compiling module FDD_FPGA_tb
+# 
+# Top level modules:
+# 	FDD_FPGA_tb
+# 
+vsim -voptargs=+acc work.FDD_FPGA_tb
+# vsim -voptargs=+acc work.FDD_FPGA_tb 
+# Loading work.FDD_FPGA_tb
+# Loading work.FDD_FPGA
+# Loading work.DivFreq
+# Loading work.FFD
+add wave -position insertpoint  \
+sim:/FDD_FPGA_tb/clk_i \
+sim:/FDD_FPGA_tb/d_i \
+sim:/FDD_FPGA_tb/q_o \
+sim:/FDD_FPGA_tb/rst_i
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Break key hit 
+run -all
+# Break key hit 
+# Simulation stop requested.
+run

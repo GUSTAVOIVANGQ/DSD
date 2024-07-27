@@ -1,0 +1,36 @@
+/*
+	Proyecto:	FDD
+	Archivo:		FDD_FPGA.V
+	Descripcion: Descripcion de un Flip Flop D en un FPGA
+					 Entrada en serie-Salida en serie
+	Asignatura:	DSD
+	Prof: 		Toño
+	Equipo:		Luis Gerardo Herrera Avila
+*/
+module barrelShifter(
+	input	clk_i,
+	input [3:0]		d_i,	
+	input	[1:0]		distancia_i,
+	input 			sentido_i,
+	output	[3:0]	q_o
+);
+	wire [7:0]	temp_w; // 2*4 -1
+	//
+	always@(posedge clk_i)
+	begin
+		//1=derecha 0= izquierda
+		temp_w = {d_i, d_i}
+		if(sentido_i)
+		begin	// 1
+			temp_w = temp_w >> distancia_i;
+			q_o <= temp_w[3:0];
+		end
+		else
+		begin
+			temp_w = temp_w << distancia_i;
+			q_o <= temp_w[7:4];
+			
+		end
+		
+	end
+endmodule

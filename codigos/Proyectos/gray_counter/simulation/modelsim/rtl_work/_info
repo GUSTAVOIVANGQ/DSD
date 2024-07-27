@@ -1,0 +1,25 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\altera\13.0sp1\DSD_4CV5\Proyectos\gray_counter\simulation\modelsim
+vgray_counter
+!i10b 1
+!s100 gLNoL??1F]zUei6]eHjLQ1
+IA7]<=SbA<db;8J85MN7oM0
+VH`5n^`g3iihZ5lK]IbChT2
+Z1 dD:\altera\13.0sp1\DSD_4CV5\Proyectos\gray_counter\simulation\modelsim
+w1715207463
+8D:/altera/13.0sp1/DSD_4CV5/Proyectos/gray_counter/gray_counter.v
+FD:/altera/13.0sp1/DSD_4CV5/Proyectos/gray_counter/gray_counter.v
+L0 1
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1715902814.255000
+!s107 D:/altera/13.0sp1/DSD_4CV5/Proyectos/gray_counter/gray_counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/gray_counter|D:/altera/13.0sp1/DSD_4CV5/Proyectos/gray_counter/gray_counter.v|
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/gray_counter -O0

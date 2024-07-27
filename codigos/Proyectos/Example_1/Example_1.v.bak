@@ -1,0 +1,54 @@
+module traffic_light_mealy (
+    input clk,
+    input reset,
+    output reg red,
+    output reg yellow,
+    output reg green
+);
+
+    // Definición de estados
+    parameter STATE_GREEN = 2'b00;
+    parameter STATE_YELLOW = 2'b01;
+    parameter STATE_RED = 2'b10;
+
+    // Registro de estado actual
+    reg [1:0] current_state;
+
+    // Lógica de transición de estados y salidas
+    always @(posedge clk or posedge reset) begin
+        if (reset) begin
+            current_state <= STATE_GREEN;
+            red <= 0;
+            yellow <= 0;
+            green <= 1;
+        end else begin
+            case (current_state)
+                STATE_GREEN: begin
+                    current_state <= STATE_YELLOW;
+                    red <= 0;
+                    yellow <= 1;
+                    green <= 0;
+                end
+                STATE_YELLOW: begin
+                    current_state <= STATE_RED;
+                    red <= 1;
+                    yellow <= 0;
+                    green <= 0;
+                end
+                STATE_RED: begin
+                    current_state <= STATE_GREEN;
+                    red <= 0;
+                    yellow <= 0;
+                    green <= 1;
+                end
+                default: begin
+                    current_state <= STATE_GREEN;
+                    red <= 0;
+                    yellow <= 0;
+                    green <= 1;
+                end
+            endcase
+        end
+    end
+
+endmodule

@@ -1,0 +1,15 @@
+|display
+cuenta_i[0] => Decoder0.IN3
+cuenta_i[1] => Decoder0.IN2
+cuenta_i[2] => Decoder0.IN1
+cuenta_i[3] => Decoder0.IN0
+enable_i => ~NO_FANOUT~
+display_o[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+display_o[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+display_o[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+display_o[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+display_o[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+display_o[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+display_o[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

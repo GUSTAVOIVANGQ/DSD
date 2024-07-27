@@ -1,0 +1,57 @@
+# Reading D:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do FFJK_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFJK {D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFJK/FFJK.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FFJK
+# -- Compiling module FFJK_tb
+# 
+# Top level modules:
+# 	FFJK_tb
+# 
+vsim -voptargs=+acc work.FFJK_tb
+# vsim -voptargs=+acc work.FFJK_tb 
+# Loading work.FFJK_tb
+# Loading work.FFJK
+add wave -position insertpoint  \
+sim:/FFJK_tb/clk_i \
+sim:/FFJK_tb/rst_i \
+sim:/FFJK_tb/j_i \
+sim:/FFJK_tb/k_i \
+sim:/FFJK_tb/q_o \
+sim:/FFJK_tb/qn_o
+run
+# Time = 0 ps, Reset = 1, J = 0, K = 0, Q = 0, Qn = 1
+run
+run
+# Time = 200 ps, Reset = 0, J = 0, K = 0, Q = 0, Qn = 1
+run
+run
+run
+run
+# Time = 600 ps, Reset = 0, J = 1, K = 0, Q = 0, Qn = 1
+# Time = 650 ps, Reset = 0, J = 1, K = 0, Q = 1, Qn = 0
+run
+run
+# Time = 800 ps, Reset = 0, J = 0, K = 1, Q = 1, Qn = 0
+# Time = 850 ps, Reset = 0, J = 0, K = 1, Q = 0, Qn = 1
+run
+run
+# Time = 1000 ps, Reset = 0, J = 1, K = 1, Q = 0, Qn = 1
+# Time = 1050 ps, Reset = 0, J = 1, K = 1, Q = 1, Qn = 0
+run
+# Time = 1150 ps, Reset = 0, J = 1, K = 1, Q = 0, Qn = 1
+run
+# Time = 1200 ps, Reset = 0, J = 0, K = 0, Q = 0, Qn = 1
+run
+run
+# Time = 1400 ps, Reset = 1, J = 0, K = 0, Q = 0, Qn = 1

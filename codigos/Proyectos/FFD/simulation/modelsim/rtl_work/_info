@@ -1,0 +1,89 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\altera\13.0sp1\DSD_4CV5\Proyectos\FFD\simulation\modelsim
+vDivFreq
+I7iRAW8g:HRJY2>MMJzShF1
+VH[[D]H=QOHIQKn:_Ehf5_3
+Z1 dD:\altera\13.0sp1\DSD_4CV5\Proyectos\FFD\simulation\modelsim
+w1708612394
+8D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD/DivFreq.v
+FD:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD/DivFreq.v
+L0 13
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD -O0
+n@div@freq
+!i10b 1
+!s100 5QVM3h:HBAG_a:??H5J^;3
+!s85 0
+!s108 1709925498.852000
+!s107 D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD/DivFreq.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD|D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD/DivFreq.v|
+!s101 -O0
+vFDD_FPGA
+!i10b 1
+!s100 o3XK14dh_Md]d>EM1eD@b0
+IT]>UO`Hfn^_bT5lBzb4=W1
+VX[TZdQQ`ZB:C@:5dP9ml92
+R1
+Z5 w1709924942
+Z6 8D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD/FDD_FPGA.v
+Z7 FD:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD/FDD_FPGA.v
+L0 15
+R2
+r1
+!s85 0
+31
+Z8 !s108 1709925499.202000
+Z9 !s107 D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD/FDD_FPGA.v|
+Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD|D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD/FDD_FPGA.v|
+!s101 -O0
+R3
+R4
+n@f@d@d_@f@p@g@a
+vFDD_FPGA_tb
+!i10b 1
+!s100 F@iM>1Da@B0X3;UB<1cWU1
+IJlVd8bj>GlUTXk7TSeGD42
+VH84b=Gho1KD`U:P?Bjl[;0
+R1
+R5
+R6
+R7
+L0 70
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+R3
+R4
+n@f@d@d_@f@p@g@a_tb
+vFFD
+INSZJCa[GGMUm<9NS?^c?l2
+V1WTCg?X[4_J^JkLVk<lk:2
+R1
+w1708612269
+8D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD/FFD.v
+FD:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD/FFD.v
+L0 13
+R2
+r1
+31
+R3
+n@f@f@d
+R4
+!i10b 1
+!s100 JU]`GUb^;32kZZEj64_DQ3
+!s85 0
+!s108 1709925498.616000
+!s107 D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD/FFD.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD|D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD/FFD.v|
+!s101 -O0

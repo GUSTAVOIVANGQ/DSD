@@ -1,0 +1,7 @@
+
+State Machine - |mealy|actual_state_w
+Name actual_state_w.final actual_state_w.intermedio2 actual_state_w.intermedio1 actual_state_w.iole 
+actual_state_w.iole 0 0 0 0 
+actual_state_w.intermedio1 0 0 1 1 
+actual_state_w.intermedio2 0 1 0 1 
+actual_state_w.final 1 0 0 1 

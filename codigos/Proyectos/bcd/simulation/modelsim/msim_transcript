@@ -1,0 +1,67 @@
+# Reading D:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do bcd_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/bcd {D:/altera/13.0sp1/DSD_4CV5/Proyectos/bcd/bcd.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bcd
+# 
+# Top level modules:
+# 	bcd
+# 
+vsim work.bcd
+# vsim work.bcd 
+# Loading work.bcd
+vsim work.bcd
+# vsim work.bcd 
+# Loading work.bcd
+add wave -position insertpoint  \
+sim:/bcd/S0 \
+sim:/bcd/S1 \
+sim:/bcd/S2 \
+sim:/bcd/S3 \
+sim:/bcd/S4 \
+sim:/bcd/S5 \
+sim:/bcd/S6 \
+sim:/bcd/S7 \
+sim:/bcd/S8 \
+sim:/bcd/S9 \
+sim:/bcd/clk \
+sim:/bcd/reset \
+sim:/bcd/bcd \
+sim:/bcd/current_state \
+sim:/bcd/next_state
+noforce sim:/bcd/clk
+noforce sim:/bcd/clk
+force -freeze sim:/bcd/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/bcd/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/bcd/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/bcd/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/bcd/reset 1 0
+run
+force -freeze sim:/bcd/reset 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run

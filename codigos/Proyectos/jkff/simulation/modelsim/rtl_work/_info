@@ -1,0 +1,26 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\altera\13.0sp1\DSD_4CV5\Proyectos\jkff\simulation\modelsim
+vFFJK
+!i10b 1
+!s100 zA;Vb^OGH:cF]W``g;c3i0
+IQT^hH9JgQ3ckFozB:0KIY0
+V461[1F<a^?@ZoD_NKnW^e2
+Z1 dD:\altera\13.0sp1\DSD_4CV5\Proyectos\jkff\simulation\modelsim
+w1719278960
+8D:/altera/13.0sp1/DSD_4CV5/Proyectos/jkff/FFJK.v
+FD:/altera/13.0sp1/DSD_4CV5/Proyectos/jkff/FFJK.v
+L0 14
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1719279000.484000
+!s107 D:/altera/13.0sp1/DSD_4CV5/Proyectos/jkff/FFJK.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/jkff|D:/altera/13.0sp1/DSD_4CV5/Proyectos/jkff/FFJK.v|
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/jkff -O0
+n@f@f@j@k

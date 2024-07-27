@@ -1,0 +1,9 @@
+|FFJK
+clk_i => q_o~reg0.CLK
+rst_i => q_o~reg0.ACLR
+j_i => Mux0.IN2
+k_i => Mux0.IN3
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+qn_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

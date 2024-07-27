@@ -1,0 +1,88 @@
+`timescale 1ns / 1ps
+
+module MemoriaRAM_tb();
+
+// Parámetros
+parameter N = 4;
+parameter M = 4;
+
+// Señales de prueba
+reg clk_i;
+reg rst_i;
+reg [N-1:0] addr_i;
+reg rden_i;
+wire [M-1:0] dato_read_o;
+reg [M-1:0] dato_write_i;
+reg wren_i;
+
+// Instancia del módulo bajo prueba
+MemoriaRAM #(
+    .N(N),
+    .M(M)
+) uut (
+    .clk_i(clk_i),
+    .rst_i(rst_i),
+    .addr_i(addr_i),
+    .rden_i(rden_i),
+    .dato_read_o(dato_read_o),
+    .dato_write_i(dato_write_i),
+    .wren_i(wren_i)
+);
+
+// Generación de reloj
+always begin
+    #5 clk_i = ~clk_i;
+end
+
+// Procedimiento de prueba
+initial begin
+    // Inicialización
+    clk_i = 0;
+    rst_i = 1;
+    addr_i = 0;
+    rden_i = 0;
+    dato_write_i = 0;
+    wren_i = 0;
+    
+    // Liberación del reset
+    #20 rst_i = 0;
+    
+    // Lectura de valores iniciales
+    #10;
+    for (int i = 0; i < 16; i = i + 1) begin
+        addr_i = i;
+        rden_i = 1;
+        #10;
+        $display("Dirección %0d: %h", addr_i, dato_read_o);
+    end
+    
+    // Escritura de nuevos valores
+    #10;
+    wren_i = 1;
+    for (int i = 0; i < 16; i = i + 1) begin
+        addr_i = i;
+        dato_write_i = i + 1;
+        #10;
+    end
+    wren_i = 0;
+    
+    // Lectura de nuevos valores
+    #10;
+    for (int i = 0; i < 16; i = i + 1) begin
+        addr_i = i;
+        rden_i = 1;
+        #10;
+        $display("Dirección %0d después de escritura: %h", addr_i, dato_read_o);
+    end
+    
+    // Fin de la simulación
+    #100 $finish;
+end
+
+// Monitoreo de señales
+initial begin
+    $monitor("Tiempo=%0t, Addr=%h, Read=%b, Write=%b, DataIn=%h, DataOut=%h",
+             $time, addr_i, rden_i, wren_i, dato_write_i, dato_read_o);
+end
+
+endmodule

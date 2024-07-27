@@ -1,0 +1,71 @@
+# Reading D:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Example_1_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/Example_1 {D:/altera/13.0sp1/DSD_4CV5/Proyectos/Example_1/Example_3.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Example_3
+# -- Compiling module DivFrec
+# 
+# Top level modules:
+# 	Example_3
+# 
+vsim -voptargs=+acc work.Example_3
+# vsim -voptargs=+acc work.Example_3 
+# Loading work.Example_3
+# Loading work.DivFrec
+add wave -position insertpoint  \
+sim:/Example_3/STATE_GREEN \
+sim:/Example_3/STATE_YELLOW \
+sim:/Example_3/STATE_RED \
+sim:/Example_3/clk \
+sim:/Example_3/reset \
+sim:/Example_3/red \
+sim:/Example_3/yellow \
+sim:/Example_3/green \
+sim:/Example_3/current_state \
+sim:/Example_3/cycle_counter \
+sim:/Example_3/clk_div
+force -freeze sim:/Example_3/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/Example_3/reset 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/Example_3/clk_div 1 0, 0 {50 ps} -r 100
+force -freeze sim:/Example_3/clk_div 1 0, 0 {50 ps} -r 100
+force -freeze sim:/Example_3/clk_div 1 0, 0 {50 ps} -r 100
+force -freeze sim:/Example_3/clk_div 1 0, 0 {50 ps} -r 100
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run

@@ -1,0 +1,35 @@
+|barrelShifter
+clk_i => q_o[0]~reg0.CLK
+clk_i => q_o[1]~reg0.CLK
+clk_i => q_o[2]~reg0.CLK
+clk_i => q_o[3]~reg0.CLK
+d_i[0] => ShiftRight0.IN7
+d_i[0] => ShiftRight0.IN8
+d_i[0] => ShiftLeft0.IN7
+d_i[0] => ShiftLeft0.IN8
+d_i[1] => ShiftRight0.IN5
+d_i[1] => ShiftRight0.IN6
+d_i[1] => ShiftLeft0.IN5
+d_i[1] => ShiftLeft0.IN6
+d_i[2] => ShiftRight0.IN3
+d_i[2] => ShiftRight0.IN4
+d_i[2] => ShiftLeft0.IN3
+d_i[2] => ShiftLeft0.IN4
+d_i[3] => ShiftRight0.IN1
+d_i[3] => ShiftRight0.IN2
+d_i[3] => ShiftLeft0.IN1
+d_i[3] => ShiftLeft0.IN2
+distancia_i[0] => ShiftRight0.IN10
+distancia_i[0] => ShiftLeft0.IN10
+distancia_i[1] => ShiftRight0.IN9
+distancia_i[1] => ShiftLeft0.IN9
+sentido_i => q_o.OUTPUTSELECT
+sentido_i => q_o.OUTPUTSELECT
+sentido_i => q_o.OUTPUTSELECT
+sentido_i => q_o.OUTPUTSELECT
+q_o[0] <= q_o[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_o[1] <= q_o[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_o[2] <= q_o[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_o[3] <= q_o[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

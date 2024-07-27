@@ -1,0 +1,61 @@
+# Reading D:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do mealy_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/altera/13.0sp1/DSD_4CV5/mealy {D:/altera/13.0sp1/DSD_4CV5/mealy/mealy.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mealy
+# 
+# Top level modules:
+# 	mealy
+# 
+vsim -voptargs=+acc work.mealy
+# vsim -voptargs=+acc work.mealy 
+# Loading work.mealy
+add wave -position insertpoint  \
+sim:/mealy/iole \
+sim:/mealy/intermedio1 \
+sim:/mealy/intermedio2 \
+sim:/mealy/final \
+sim:/mealy/clk_i \
+sim:/mealy/rst_ni \
+sim:/mealy/x_i \
+sim:/mealy/y_o \
+sim:/mealy/actual_state_w
+force -freeze sim:/mealy/clk_i 1 0, 0 {50 ps} -r 100
+force -freeze sim:/mealy/rst_ni HiZ 0
+force -freeze sim:/mealy/x_i 1 0
+run
+run
+force -freeze sim:/mealy/rst_ni 0 0
+run
+run
+run
+force -freeze sim:/mealy/rst_ni 1 0
+run
+run
+run
+force -freeze sim:/mealy/x_i 0 0
+run
+run
+force -freeze sim:/mealy/x_i 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run

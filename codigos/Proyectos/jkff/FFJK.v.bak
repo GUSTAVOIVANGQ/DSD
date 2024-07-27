@@ -1,0 +1,66 @@
+/*
+	Encabezado
+*/
+
+module FFJK(
+	input			clk_i,
+	input			rst_i,
+	input			j_i,
+	input			k_i,
+	output reg	q_o,
+	output		qn_o
+);
+	//wire	[1:0]	jk_w;
+	//assign		jk_w;	=	{j,k};
+	//case ()
+		// J|K
+		assign qn_o = ~q_o;
+	always @(posedge clk_i, posedge rst_i)
+	begin
+		if(rst_i)
+			q_o <= 1'b0;
+		else
+			case	({j_i,k_i})
+				2'b00:	q_o	<=	q_o;
+				2'b10:	q_o	<=	1'b1;
+				2'b01:	q_o	<=	1'b0;
+				2'b11:	q_o	<=	~q_o;
+			endcase
+	end
+endmodule
+
+
+module BCDJK_tb();
+
+	reg	clk_i;
+	reg	rst_i;
+	reg	j_i;
+	reg	k_i;
+	wire	[3:0]	q_o;
+	wire	[3:0]	qn_o;
+
+	
+	initial
+	begin
+		clk_i	= 1'b1;
+		rst_i	= 1'b1;
+		j_i	= 1'b1;
+		k_i	= 1'b1;
+		#100
+			rst_i = 1'b0;
+	end
+	BCDJK DUT(
+	.clk_i		(clk_i),  //Puertos  (BCDJK_tb)
+	.rst_i		(rst_i),
+	.j_i			(j_i),
+	.k_i			(k_i),
+	.q_o			(q_o),
+	.qn_o			(qn_o)
+	);
+	
+	always
+	begin
+		#50
+			clk_i = ~clk_i;
+	end
+endmodule

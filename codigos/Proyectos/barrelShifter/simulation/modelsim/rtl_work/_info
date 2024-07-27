@@ -1,0 +1,47 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\altera\13.0sp1\DSD_4CV5\Proyectos\barrelShifter\simulation\modelsim
+vbarrelShifter
+!i10b 1
+!s100 13CmL2:Zb]lz>Dh<KFEIz3
+IN[J:GNPzGHG<`IUd@hTho0
+V?;84>EC6E7E:NkIV@_EW_1
+Z1 dD:\altera\13.0sp1\DSD_4CV5\Proyectos\barrelShifter\simulation\modelsim
+Z2 w1710387949
+Z3 8D:/altera/13.0sp1/DSD_4CV5/Proyectos/barrelShifter.v
+Z4 FD:/altera/13.0sp1/DSD_4CV5/Proyectos/barrelShifter.v
+L0 10
+Z5 OV;L;10.1d;51
+r1
+!s85 0
+31
+Z6 !s108 1710387986.053000
+Z7 !s107 D:/altera/13.0sp1/DSD_4CV5/Proyectos/barrelShifter.v|
+Z8 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos|D:/altera/13.0sp1/DSD_4CV5/Proyectos/barrelShifter.v|
+!s101 -O0
+Z9 o-vlog01compat -work work -O0
+Z10 !s92 -vlog01compat -work work +incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos -O0
+nbarrel@shifter
+vbarrelShifter_tb
+!i10b 1
+!s100 >EDTSBz0I4`MJdVNECD]j3
+IO39aoH8Xl6lKGMk<eUl<]3
+V7Bg0Ph7L9H0a1QzzeNP<]0
+R1
+R2
+R3
+R4
+L0 38
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!s101 -O0
+R9
+R10
+nbarrel@shifter_tb

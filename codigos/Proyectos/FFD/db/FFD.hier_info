@@ -1,0 +1,105 @@
+|FDD_FPGA
+clk_i => clk_i.IN5
+rst_i => rst_i.IN5
+d_i => d_i.IN1
+q_o <= FFD:FDD4.q_o
+
+
+|FDD_FPGA|DivFreq:DF
+clk_i => clk_o~reg0.CLK
+clk_i => ctr[0].CLK
+clk_i => ctr[1].CLK
+clk_i => ctr[2].CLK
+clk_i => ctr[3].CLK
+clk_i => ctr[4].CLK
+clk_i => ctr[5].CLK
+clk_i => ctr[6].CLK
+clk_i => ctr[7].CLK
+clk_i => ctr[8].CLK
+clk_i => ctr[9].CLK
+clk_i => ctr[10].CLK
+clk_i => ctr[11].CLK
+clk_i => ctr[12].CLK
+clk_i => ctr[13].CLK
+clk_i => ctr[14].CLK
+clk_i => ctr[15].CLK
+clk_i => ctr[16].CLK
+clk_i => ctr[17].CLK
+clk_i => ctr[18].CLK
+clk_i => ctr[19].CLK
+clk_i => ctr[20].CLK
+clk_i => ctr[21].CLK
+clk_i => ctr[22].CLK
+clk_i => ctr[23].CLK
+clk_i => ctr[24].CLK
+clk_i => ctr[25].CLK
+clk_i => ctr[26].CLK
+clk_i => ctr[27].CLK
+clk_i => ctr[28].CLK
+clk_i => ctr[29].CLK
+clk_i => ctr[30].CLK
+clk_i => ctr[31].CLK
+rst_i => clk_o~reg0.PRESET
+rst_i => ctr[0].ACLR
+rst_i => ctr[1].ACLR
+rst_i => ctr[2].ACLR
+rst_i => ctr[3].ACLR
+rst_i => ctr[4].ACLR
+rst_i => ctr[5].ACLR
+rst_i => ctr[6].ACLR
+rst_i => ctr[7].ACLR
+rst_i => ctr[8].ACLR
+rst_i => ctr[9].ACLR
+rst_i => ctr[10].ACLR
+rst_i => ctr[11].ACLR
+rst_i => ctr[12].ACLR
+rst_i => ctr[13].ACLR
+rst_i => ctr[14].ACLR
+rst_i => ctr[15].ACLR
+rst_i => ctr[16].ACLR
+rst_i => ctr[17].ACLR
+rst_i => ctr[18].ACLR
+rst_i => ctr[19].ACLR
+rst_i => ctr[20].ACLR
+rst_i => ctr[21].ACLR
+rst_i => ctr[22].ACLR
+rst_i => ctr[23].ACLR
+rst_i => ctr[24].ACLR
+rst_i => ctr[25].ACLR
+rst_i => ctr[26].ACLR
+rst_i => ctr[27].ACLR
+rst_i => ctr[28].ACLR
+rst_i => ctr[29].ACLR
+rst_i => ctr[30].ACLR
+rst_i => ctr[31].ACLR
+clk_o <= clk_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FDD_FPGA|FFD:FDD1
+d_i => q_o~reg0.DATAIN
+clk_i => q_o~reg0.CLK
+rst_i => q_o~reg0.ACLR
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FDD_FPGA|FFD:FDD2
+d_i => q_o~reg0.DATAIN
+clk_i => q_o~reg0.CLK
+rst_i => q_o~reg0.ACLR
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FDD_FPGA|FFD:FDD3
+d_i => q_o~reg0.DATAIN
+clk_i => q_o~reg0.CLK
+rst_i => q_o~reg0.ACLR
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FDD_FPGA|FFD:FDD4
+d_i => q_o~reg0.DATAIN
+clk_i => q_o~reg0.CLK
+rst_i => q_o~reg0.ACLR
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

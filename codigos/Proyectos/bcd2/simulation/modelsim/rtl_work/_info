@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\altera\13.0sp1\DSD_4CV5\Proyectos\bcd2\simulation\modelsim
+vbcd2
+!i10b 1
+!s100 H6=9SGhVmS<moE[XilFnH2
+Ih0lKjLRL><Mle_>i5e62i3
+VKeLi7:AOYC]83=W3P?IMQ3
+Z1 dD:\altera\13.0sp1\DSD_4CV5\Proyectos\bcd2\simulation\modelsim
+Z2 w1716508354
+Z3 8D:/altera/13.0sp1/DSD_4CV5/Proyectos/bcd2/bcd2.v
+Z4 FD:/altera/13.0sp1/DSD_4CV5/Proyectos/bcd2/bcd2.v
+L0 1
+Z5 OV;L;10.1d;51
+r1
+!s85 0
+31
+Z6 !s108 1716508405.885000
+Z7 !s107 D:/altera/13.0sp1/DSD_4CV5/Proyectos/bcd2/bcd2.v|
+Z8 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/bcd2|D:/altera/13.0sp1/DSD_4CV5/Proyectos/bcd2/bcd2.v|
+!s101 -O0
+Z9 o-vlog01compat -work work -O0
+Z10 !s92 -vlog01compat -work work +incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/bcd2 -O0
+vtb_jk_bcd
+!i10b 1
+!s100 `eG1H;<;L6QQ:7NccK3K82
+IOTnV8daDBFOK0>2Y6ejR_1
+V<6bIIgPg5M<3N=ioDNL<_2
+R1
+R2
+R3
+R4
+L0 58
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!s101 -O0
+R9
+R10

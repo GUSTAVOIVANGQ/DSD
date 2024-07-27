@@ -1,0 +1,25 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\altera\13.0sp1\DSD_4CV5\mealy\simulation\modelsim
+vmealy
+!i10b 1
+!s100 ja7:XYIHc=nRH3U3Q9VEQ3
+IMI82FGKNFh4GfIKGTJ=Ej3
+Vb29k7ISBgzocS_9f=L1=U2
+Z1 dD:\altera\13.0sp1\DSD_4CV5\mealy\simulation\modelsim
+w1711679244
+8D:/altera/13.0sp1/DSD_4CV5/mealy/mealy.v
+FD:/altera/13.0sp1/DSD_4CV5/mealy/mealy.v
+L0 2
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1711679488.552000
+!s107 D:/altera/13.0sp1/DSD_4CV5/mealy/mealy.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/13.0sp1/DSD_4CV5/mealy|D:/altera/13.0sp1/DSD_4CV5/mealy/mealy.v|
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+D:/altera/13.0sp1/DSD_4CV5/mealy -O0

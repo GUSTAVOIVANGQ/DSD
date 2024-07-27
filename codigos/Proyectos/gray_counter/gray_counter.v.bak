@@ -1,0 +1,58 @@
+module gray_counter
+#(parameter WIDTH=8)
+(
+	input 						clk,
+	input							enable,
+	input							reset,
+	output reg [WIDTH-1:0]	gray_count
+);
+	reg 							q					[WIDTH-1:-1];
+	reg 							no_ones_below 	[WIDTH-1:-1];
+	reg 							q_msb;
+
+	integer 						i;
+	integer						j;
+	integer						k;
+
+	always @ (posedge reset or posedge clk)
+	begin
+		if (reset)
+		begin
+			q[-1] 		<= 1;
+			for (i = 0; i <= WIDTH-1; i = i + 1)
+				q[i] <= 0;
+
+		end
+		else 
+			if (enable)
+			begin
+				q[-1] <= ~q[-1];
+				
+				for (i = 0; i < WIDTH-1; i = i + 1)
+				begin
+	
+					q[i] <= q[i] ^ (q[i-1] & no_ones_below[i-1]);
+	
+				end
+
+				q[WIDTH-1] <= q[WIDTH-1] ^ (q_msb & no_ones_below[WIDTH-2]);
+			end
+	end
+
+
+	always @(*)
+	begin
+
+		no_ones_below[-1] <= 1;
+
+		for (j = 0; j < WIDTH-1; j = j + 1)
+			no_ones_below[j] <= no_ones_below[j-1] & ~q[j-1];
+
+		q_msb <= q[WIDTH-1] | q[WIDTH-2];
+
+		for (k = 0; k < WIDTH; k = k + 1)
+			gray_count[k] <= q[k];
+	end	
+
+
+endmodule

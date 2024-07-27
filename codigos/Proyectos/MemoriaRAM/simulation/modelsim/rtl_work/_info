@@ -1,0 +1,47 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\altera\13.0sp1\DSD_4CV5\Proyectos\MemoriaRAM\simulation\modelsim
+vMemoriaRAM
+!i10b 1
+!s100 o_7P:>QCikHE?TcO^i=9o0
+IA6:4fGdi8:3KC`JE2WWaQ1
+V?:5g3_B00`T=i@:fF^6e93
+Z1 dD:\altera\13.0sp1\DSD_4CV5\Proyectos\MemoriaRAM\simulation\modelsim
+Z2 w1719446658
+Z3 8D:/altera/13.0sp1/DSD_4CV5/Proyectos/MemoriaRAM/MemoriaRAM.v
+Z4 FD:/altera/13.0sp1/DSD_4CV5/Proyectos/MemoriaRAM/MemoriaRAM.v
+L0 15
+Z5 OV;L;10.1d;51
+r1
+!s85 0
+31
+Z6 !s108 1719448162.179000
+Z7 !s107 D:/altera/13.0sp1/DSD_4CV5/Proyectos/MemoriaRAM/MemoriaRAM.v|
+Z8 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/MemoriaRAM|D:/altera/13.0sp1/DSD_4CV5/Proyectos/MemoriaRAM/MemoriaRAM.v|
+!s101 -O0
+Z9 o-vlog01compat -work work -O0
+Z10 !s92 -vlog01compat -work work +incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/MemoriaRAM -O0
+n@memoria@r@a@m
+vMemoriaRAM_tb
+!i10b 1
+!s100 V98eWAjFDCDcX:I402=`U0
+IbFN=;Uj1UE6LofA?UIBDK2
+VPh38XOMk>FenVR@RnbME?0
+R1
+R2
+R3
+R4
+L0 61
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!s101 -O0
+R9
+R10
+n@memoria@r@a@m_tb

@@ -1,0 +1,8 @@
+module romboard#(
+	parameter	D=8,// Deeph
+	parameter	W=32;// Word
+)(
+	input	[D-1:0]	addr_i,
+	input				rden_i,
+	output [w-1:0]	dato_o
+);

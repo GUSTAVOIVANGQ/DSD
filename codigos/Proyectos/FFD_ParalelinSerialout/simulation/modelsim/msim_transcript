@@ -1,0 +1,61 @@
+# Reading D:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do FFD_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParalelinSerialout {D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParalelinSerialout/FFD.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FFD
+# 
+# Top level modules:
+# 	FFD
+# vlog -vlog01compat -work work +incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParalelinSerialout {D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParalelinSerialout/DivFreq.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DivFreq
+# 
+# Top level modules:
+# 	DivFreq
+# vlog -vlog01compat -work work +incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParalelinSerialout {D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParalelinSerialout/FDD_FPGA.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FDD_FPGA
+# -- Compiling module FDD_FPGA_tb
+# 
+# Top level modules:
+# 	FDD_FPGA_tb
+# vlog -vlog01compat -work work +incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParalelinSerialout {D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParalelinSerialout/FFD_ctrl.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FFD_ctrl
+# 
+# Top level modules:
+# 	FFD_ctrl
+# 
+vsim -voptargs=+acc work.FDD_FPGA_tb
+# vsim -voptargs=+acc work.FDD_FPGA_tb 
+# Loading work.FDD_FPGA_tb
+# Loading work.FDD_FPGA
+# Loading work.DivFreq
+# Loading work.FFD_ctrl
+# Loading work.FFD
+# ** Error: (vsim-3389) D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParalelinSerialout/FDD_FPGA.v(150): Port 'q_o1' not found in the connected module (4th connection).
+# 
+#         Region: /FDD_FPGA_tb/DUT
+# ** Error: (vsim-3389) D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParalelinSerialout/FDD_FPGA.v(150): Port 'q_o2' not found in the connected module (5th connection).
+# 
+#         Region: /FDD_FPGA_tb/DUT
+# ** Error: (vsim-3389) D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParalelinSerialout/FDD_FPGA.v(150): Port 'q_o3' not found in the connected module (6th connection).
+# 
+#         Region: /FDD_FPGA_tb/DUT
+# ** Error: (vsim-3389) D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParalelinSerialout/FDD_FPGA.v(150): Port 'q_o4' not found in the connected module (7th connection).
+# 
+#         Region: /FDD_FPGA_tb/DUT
+# ** Fatal: (vsim-3365) D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParalelinSerialout/FDD_FPGA.v(150): Too many port connections. Expected 6, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /FDD_FPGA_tb/DUT File: D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParalelinSerialout/FDD_FPGA.v
+# FATAL ERROR while loading design
+# Error loading design

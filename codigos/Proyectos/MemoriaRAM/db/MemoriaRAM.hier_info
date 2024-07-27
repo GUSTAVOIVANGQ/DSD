@@ -1,0 +1,44 @@
+|MemoriaRAM
+clk_i => RAM.we_a.CLK
+clk_i => RAM.waddr_a[3].CLK
+clk_i => RAM.waddr_a[2].CLK
+clk_i => RAM.waddr_a[1].CLK
+clk_i => RAM.waddr_a[0].CLK
+clk_i => RAM.data_a[3].CLK
+clk_i => RAM.data_a[2].CLK
+clk_i => RAM.data_a[1].CLK
+clk_i => RAM.data_a[0].CLK
+clk_i => RAM.CLK0
+rst_i => comb.IN0
+addr_i[0] => Mux0.IN3
+addr_i[0] => RAM.waddr_a[0].DATAIN
+addr_i[0] => RAM.WADDR
+addr_i[0] => RAM.RADDR
+addr_i[1] => Mux0.IN2
+addr_i[1] => RAM.waddr_a[1].DATAIN
+addr_i[1] => RAM.WADDR1
+addr_i[1] => RAM.RADDR1
+addr_i[2] => Mux0.IN1
+addr_i[2] => RAM.waddr_a[2].DATAIN
+addr_i[2] => RAM.WADDR2
+addr_i[2] => RAM.RADDR2
+addr_i[3] => Mux0.IN0
+addr_i[3] => RAM.waddr_a[3].DATAIN
+addr_i[3] => RAM.WADDR3
+addr_i[3] => RAM.RADDR3
+rden_i => dato_read_o.IN1
+dato_read_o[0] <= dato_read_o.DB_MAX_OUTPUT_PORT_TYPE
+dato_read_o[1] <= dato_read_o.DB_MAX_OUTPUT_PORT_TYPE
+dato_read_o[2] <= dato_read_o.DB_MAX_OUTPUT_PORT_TYPE
+dato_read_o[3] <= dato_read_o.DB_MAX_OUTPUT_PORT_TYPE
+dato_write_i[0] => RAM.data_a[0].DATAIN
+dato_write_i[0] => RAM.DATAIN
+dato_write_i[1] => RAM.data_a[1].DATAIN
+dato_write_i[1] => RAM.DATAIN1
+dato_write_i[2] => RAM.data_a[2].DATAIN
+dato_write_i[2] => RAM.DATAIN2
+dato_write_i[3] => RAM.data_a[3].DATAIN
+dato_write_i[3] => RAM.DATAIN3
+wren_i => comb.IN1
+
+

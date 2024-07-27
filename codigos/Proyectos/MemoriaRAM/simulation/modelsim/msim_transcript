@@ -1,0 +1,47 @@
+# Reading D:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do MemoriaRAM_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/MemoriaRAM {D:/altera/13.0sp1/DSD_4CV5/Proyectos/MemoriaRAM/MemoriaRAM.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MemoriaRAM
+# -- Compiling module MemoriaRAM_tb
+# 
+# Top level modules:
+# 	MemoriaRAM_tb
+# 
+vsim -voptargs=+acc work.MemoriaRAM_tb
+# vsim -voptargs=+acc work.MemoriaRAM_tb 
+# Loading work.MemoriaRAM_tb
+# Loading work.MemoriaRAM
+add wave -position insertpoint  \
+sim:/MemoriaRAM_tb/N \
+sim:/MemoriaRAM_tb/M \
+sim:/MemoriaRAM_tb/clk_i \
+sim:/MemoriaRAM_tb/rst_i \
+sim:/MemoriaRAM_tb/addr_i \
+sim:/MemoriaRAM_tb/rden_i \
+sim:/MemoriaRAM_tb/dato_read_o \
+sim:/MemoriaRAM_tb/dato_write_i \
+sim:/MemoriaRAM_tb/wren_i \
+sim:/MemoriaRAM_tb/i
+run
+# Tiempo=0, Addr=0, Read=0, Write=0, DataIn=0, DataOut=0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run

@@ -1,0 +1,50 @@
+# Reading D:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do gray_counter_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/gray_counter {D:/altera/13.0sp1/DSD_4CV5/Proyectos/gray_counter/gray_counter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module gray_counter
+# 
+# Top level modules:
+# 	gray_counter
+# 
+vsim -voptargs=+acc work.gray_counter
+# vsim -voptargs=+acc work.gray_counter 
+# Loading work.gray_counter
+add wave -position insertpoint  \
+sim:/gray_counter/WIDTH \
+sim:/gray_counter/clk \
+sim:/gray_counter/enable \
+sim:/gray_counter/reset \
+sim:/gray_counter/resultado_o \
+sim:/gray_counter/segmentos_o \
+sim:/gray_counter/q \
+sim:/gray_counter/no_ones_below \
+sim:/gray_counter/q_msb \
+sim:/gray_counter/i \
+sim:/gray_counter/j \
+sim:/gray_counter/k
+run
+force -freeze sim:/gray_counter/clk 1 0, 0 {50 ps} -r 100
+run
+force -freeze sim:/gray_counter/enable 1 0
+force -freeze sim:/gray_counter/reset 1 0
+run
+run
+force -freeze sim:/gray_counter/reset 0 0
+run
+run
+run
+run
+run
+run
+run

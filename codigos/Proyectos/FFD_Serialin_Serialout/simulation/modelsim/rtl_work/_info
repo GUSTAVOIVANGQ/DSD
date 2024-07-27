@@ -1,0 +1,89 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\altera\13.0sp1\DSD_4CV5\Proyectos\FFD_Serialin_Serialout\simulation\modelsim
+vDivFreq
+IBh?oKlEQQ_lE1bI<JPokn1
+VH[[D]H=QOHIQKn:_Ehf5_3
+Z1 dD:\altera\13.0sp1\DSD_4CV5\Proyectos\FFD_Serialin_Serialout\simulation\modelsim
+w1708612394
+8D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_Serialin_Serialout/DivFreq.v
+FD:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_Serialin_Serialout/DivFreq.v
+L0 13
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_Serialin_Serialout -O0
+n@div@freq
+!i10b 1
+!s100 aVEBA]UL5RlQj`hze7;je3
+!s85 0
+!s108 1710251263.079000
+!s107 D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_Serialin_Serialout/DivFreq.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_Serialin_Serialout|D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_Serialin_Serialout/DivFreq.v|
+!s101 -O0
+vFDD_FPGA
+!i10b 1
+!s100 Q0_EIZ^=<OA>iVgZhCL532
+I=RKg1O3;Z_j5Rd>LeRJ?=1
+VX[TZdQQ`ZB:C@:5dP9ml92
+R1
+Z5 w1709927732
+Z6 8D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_Serialin_Serialout/FDD_FPGA.v
+Z7 FD:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_Serialin_Serialout/FDD_FPGA.v
+L0 15
+R2
+r1
+!s85 0
+31
+Z8 !s108 1710251263.482000
+Z9 !s107 D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_Serialin_Serialout/FDD_FPGA.v|
+Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_Serialin_Serialout|D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_Serialin_Serialout/FDD_FPGA.v|
+!s101 -O0
+R3
+R4
+n@f@d@d_@f@p@g@a
+vFDD_FPGA_tb
+!i10b 1
+!s100 0EWC8?S:5RgGWfb999EZ[3
+IL[R?hVJ@bjb0aMm9Og>Xi3
+VH84b=Gho1KD`U:P?Bjl[;0
+R1
+R5
+R6
+R7
+L0 70
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+R3
+R4
+n@f@d@d_@f@p@g@a_tb
+vFFD
+IPTzBTaU?Q66HfYz=HAU]11
+V1WTCg?X[4_J^JkLVk<lk:2
+R1
+w1708612269
+8D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_Serialin_Serialout/FFD.v
+FD:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_Serialin_Serialout/FFD.v
+L0 13
+R2
+r1
+31
+R3
+n@f@f@d
+R4
+!i10b 1
+!s100 z=F?TNjB2ol<kW:G8zG993
+!s85 0
+!s108 1710251262.753000
+!s107 D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_Serialin_Serialout/FFD.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_Serialin_Serialout|D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_Serialin_Serialout/FFD.v|
+!s101 -O0

@@ -1,0 +1,9 @@
+ParealelnSerialout
+
+module FFD_ctr(
+  input 			clk_i,
+  input 			rst_i,
+  input [3:0]	d_i,
+  output 		q_o,
+  
+);

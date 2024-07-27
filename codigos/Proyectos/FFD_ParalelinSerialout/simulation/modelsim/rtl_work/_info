@@ -1,0 +1,110 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\altera\13.0sp1\DSD_4CV5\Proyectos\FFD_ParalelinSerialout\simulation\modelsim
+vDivFreq
+IdARQ2gD9nZc_iA3Q<z0]f2
+VH[[D]H=QOHIQKn:_Ehf5_3
+Z1 dD:\altera\13.0sp1\DSD_4CV5\Proyectos\FFD_ParalelinSerialout\simulation\modelsim
+w1708612394
+8D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParalelinSerialout/DivFreq.v
+FD:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParalelinSerialout/DivFreq.v
+L0 13
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParalelinSerialout -O0
+n@div@freq
+!i10b 1
+!s100 m_3<5SPf_LHhIFH`ImL[G0
+!s85 0
+!s108 1709929484.928000
+!s107 D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParalelinSerialout/DivFreq.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParalelinSerialout|D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParalelinSerialout/DivFreq.v|
+!s101 -O0
+vFDD_FPGA
+I?H4e4<I;UcORCVNB_KzYc0
+VQ_PN>O<zBhoF6hl@o4Ql[0
+R1
+Z5 w1709929452
+Z6 8D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParalelinSerialout/FDD_FPGA.v
+Z7 FD:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParalelinSerialout/FDD_FPGA.v
+L0 15
+R2
+r1
+31
+Z8 !s108 1709929485.177000
+Z9 !s107 D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParalelinSerialout/FDD_FPGA.v|
+Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParalelinSerialout|D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParalelinSerialout/FDD_FPGA.v|
+R3
+R4
+n@f@d@d_@f@p@g@a
+!i10b 1
+!s100 FQ54b:;9=nn:8Vkg]WNQW3
+!s85 0
+!s101 -O0
+vFDD_FPGA_tb
+IXX`1YjmTJUE=MS6mfXg8g2
+VH84b=Gho1KD`U:P?Bjl[;0
+R1
+R5
+R6
+R7
+L0 122
+R2
+r1
+31
+R8
+R9
+R10
+R3
+R4
+n@f@d@d_@f@p@g@a_tb
+!i10b 1
+!s100 Q_7TfzjhCU[H`Zc=lieWn3
+!s85 0
+!s101 -O0
+vFFD
+IHKGfZ`=GHlza3608zol?11
+V1WTCg?X[4_J^JkLVk<lk:2
+R1
+w1708612269
+8D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParalelinSerialout/FFD.v
+FD:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParalelinSerialout/FFD.v
+L0 13
+R2
+r1
+31
+R3
+n@f@f@d
+R4
+!i10b 1
+!s100 joT@3iYa522R=8[bB@Fj61
+!s85 0
+!s108 1709929484.679000
+!s107 D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParalelinSerialout/FFD.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParalelinSerialout|D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParalelinSerialout/FFD.v|
+!s101 -O0
+vFFD_ctrl
+!i10b 1
+!s100 d@LJm>ljK>?EJZ9gTV;jR1
+IfKY7J>f6=kl1jO^G@OhKY0
+VMObo4hGfB]N;PZ6zjknV_2
+R1
+w1709432867
+8D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParalelinSerialout/FFD_ctrl.v
+FD:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParalelinSerialout/FFD_ctrl.v
+L0 14
+R2
+r1
+!s85 0
+31
+!s108 1709929485.476000
+!s107 D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParalelinSerialout/FFD_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParalelinSerialout|D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParalelinSerialout/FFD_ctrl.v|
+!s101 -O0
+R3
+R4
+n@f@f@d_ctrl

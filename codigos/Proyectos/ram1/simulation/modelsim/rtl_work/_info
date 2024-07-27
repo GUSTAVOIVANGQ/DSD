@@ -1,0 +1,25 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\altera\13.0sp1\DSD_4CV5\Proyectos\ram1\simulation\modelsim
+vram1
+!i10b 1
+!s100 CC;618nTzjkVeFS]m:ldA1
+I4gR549^e>SBHM1gF70^ID1
+Vamj4XcjJaJe2G`DiONT;a0
+Z1 dD:\altera\13.0sp1\DSD_4CV5\Proyectos\ram1\simulation\modelsim
+w1717628561
+8D:/altera/13.0sp1/DSD_4CV5/Proyectos/ram1/ram1.v
+FD:/altera/13.0sp1/DSD_4CV5/Proyectos/ram1/ram1.v
+L0 1
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1717631009.967000
+!s107 D:/altera/13.0sp1/DSD_4CV5/Proyectos/ram1/ram1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/ram1|D:/altera/13.0sp1/DSD_4CV5/Proyectos/ram1/ram1.v|
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/ram1 -O0

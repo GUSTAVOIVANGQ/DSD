@@ -1,0 +1,27 @@
+Quartus II Archive log --	D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_restored/FFD.qarlog
+
+Archive:	D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_restored/FFD.qar
+Date:		Fri Mar 08 14:22:27 2024
+Quartus II 64-Bit		13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+
+	=========== Files Selected: ===========
+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_restored/DivFreq.v
+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_restored/FDD_FPGA.v
+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_restored/FFD.qpf
+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_restored/FFD.qsf
+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_restored/FFD.v
+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_restored/FFD_ctr.v
+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_restored/FFD_ctrl.v
+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_restored/assignment_defaults.qdf
+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_restored/incremental_db/compiled_partitions/FFD.db_info
+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_restored/x.v
+	======= Total: 10 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Fri Mar 08 14:22:48 2024
+Source archive file:	D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_restored/FFD.qar
+Archive was extracted into	D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParalelinSerialout/
+		 - successfully.

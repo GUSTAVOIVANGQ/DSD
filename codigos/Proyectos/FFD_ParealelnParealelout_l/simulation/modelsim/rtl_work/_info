@@ -1,0 +1,68 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\altera\13.0sp1\DSD_4CV5\Proyectos\FFD_ParealelnParealelout_l\simulation\modelsim
+vDivFreq
+I1GOjiOK29?;aj`Nb8[Nae3
+VH[[D]H=QOHIQKn:_Ehf5_3
+Z1 dD:\altera\13.0sp1\DSD_4CV5\Proyectos\FFD_ParealelnParealelout_l\simulation\modelsim
+w1708612394
+8D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_l/DivFreq.v
+FD:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_l/DivFreq.v
+L0 13
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_l -O0
+n@div@freq
+!i10b 1
+!s100 b=DofX9Z:094TkB?b0kmI0
+!s85 0
+!s108 1710362629.158000
+!s107 D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_l/DivFreq.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_l|D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_l/DivFreq.v|
+!s101 -O0
+vFDD_FPGA_tv
+!i10b 1
+!s100 n;R[fhbm3S]ReKm10XB_>3
+I6iFmBAFR]4Q;L<UJ83E@M1
+Vz_cDzef7CUg0_E8miOWR72
+R1
+w0
+8D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_l/FDD_FPGA.v
+FD:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_l/FDD_FPGA.v
+L0 108
+R2
+r1
+!s85 0
+31
+!s108 1710362629.517000
+!s107 D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_l/FDD_FPGA.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_l|D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_l/FDD_FPGA.v|
+!s101 -O0
+R3
+R4
+n@f@d@d_@f@p@g@a_tv
+vFFD
+IIAgZH0DUaTM<_`6gba?aF1
+V1WTCg?X[4_J^JkLVk<lk:2
+R1
+w1708612269
+8D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_l/FFD.v
+FD:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_l/FFD.v
+L0 13
+R2
+r1
+31
+R3
+n@f@f@d
+R4
+!i10b 1
+!s100 LD1PZ@e[`>C2?_>l1]UiB0
+!s85 0
+!s108 1710362628.595000
+!s107 D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_l/FFD.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_l|D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD_ParealelnParealelout_l/FFD.v|
+!s101 -O0

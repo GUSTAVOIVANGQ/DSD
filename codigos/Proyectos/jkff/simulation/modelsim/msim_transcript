@@ -1,0 +1,47 @@
+# Reading D:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do jkff_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/jkff {D:/altera/13.0sp1/DSD_4CV5/Proyectos/jkff/FFJK.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FFJK
+# 
+# Top level modules:
+# 	FFJK
+# 
+vsim -voptargs=+acc work.FFJK
+# vsim -voptargs=+acc work.FFJK 
+# Loading work.FFJK
+add wave -position insertpoint  \
+sim:/FFJK/clk_i \
+sim:/FFJK/rst_i \
+sim:/FFJK/j_i \
+sim:/FFJK/k_i \
+sim:/FFJK/q_o \
+sim:/FFJK/qn_o
+force -freeze sim:/FFJK/clk_i 1 0, 0 {50 ps} -r 100
+force -freeze sim:/FFJK/rst_i 1 0
+run
+run
+run
+force -freeze sim:/FFJK/rst_i 0 0
+run
+run
+run
+force -freeze sim:/FFJK/j_i 1 0
+run
+run
+force -freeze sim:/FFJK/k_i 0 0
+run
+run
+run
+run
+run

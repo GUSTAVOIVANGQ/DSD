@@ -1,0 +1,93 @@
+
+module FDD_FPGA(
+  input clk_i,
+  input rst_i,
+  input d_i,
+  output q_o
+);
+  // Declaration of signals
+  wire ff1q_ff2d;
+  wire ff2q_ff3d;
+  wire ff3q_ff4d;
+  wire clk_df;
+
+  // Instantiate the divisor of frequencies
+  DivFreq DF (
+    .clk_i(clk_i),
+    .rst_i(rst_i),
+    .clk_o(clk_df)
+  );
+
+  // Instantiate the 1st FFD
+  FFD FFD1 (
+    .d_i(d_i),
+		.clk_i	(clk_i),//(clk_df),
+    .rst_i(rst_i),
+    .q_o(ff1q_ff2d)
+  );
+
+  // Instantiate the 2nd FFD
+  FFD FFD2 (
+    .d_i(ff1q_ff2d),
+		.clk_i	(clk_i),//(clk_df),
+    .rst_i(rst_i),
+    .q_o(ff2q_ff3d)
+  );
+
+  // Instantiate the 3rd FFD
+  FFD FFD3 (
+    .d_i(ff2q_ff3d),
+		.clk_i	(clk_i),//(clk_df),
+    .rst_i(rst_i),
+    .q_o(ff3q_ff4d)
+  );
+
+  // Instantiate the 4th FFD
+  FFD FFD4 (
+    .d_i(ff3q_ff4d),
+		.clk_i	(clk_i),//(clk_df),
+    .rst_i(rst_i),
+    .q_o(q_o)
+  );
+  
+endmodule
+
+// Define the DivFreq module and FFD module accordingly.
+// Ensure the correctness of these modules in your code.
+// I've assumed they exist based on your previous code snippets.
+module FDD_FPGA_tv();
+  reg clk_i;
+  reg rst_i;
+  reg d_i;
+  wire q_o;
+  
+  // Instantiate the FDD_FPGA module
+  FDD_FPGA FDD_inst (
+    .clk_i(clk_i),
+    .rst_i(rst_i),
+    .d_i(d_i),
+    .q_o(q_o)
+  );
+
+  initial
+  begin
+    clk_i <= 1'b1;
+    rst_i <= 1'b1;
+    d_i   <= 1'b0;
+    
+    // Toggle clk_i every 50 time units
+    forever #50 clk_i <= ~clk_i;
+
+    // De-assert rst_i after 100 time units
+    #100 rst_i <= 1'b0;
+
+    // Simulate data changes every 100 time units
+    #100 d_i <= 1'b0;
+    #100 d_i <= 1'b1;
+    #100 d_i <= 1'b1;
+    #100 d_i <= 1'b0;
+    #100 d_i <= 1'b0;
+    #100 d_i <= 1'b0;
+    #100 d_i <= 1'b0;
+  end
+endmodule

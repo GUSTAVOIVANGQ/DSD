@@ -1,0 +1,51 @@
+|bcd2
+clk_i => clk_i.IN1
+reset_i => reset_i.IN3
+j_i => j_i.IN4
+k_i => k_i.IN4
+q_o[0] <= q_o[0].DB_MAX_OUTPUT_PORT_TYPE
+q_o[1] <= q_o[1].DB_MAX_OUTPUT_PORT_TYPE
+q_o[2] <= jk:jk_bcd2.q_o
+q_o[3] <= jk:jk_bcd3.q_o
+q_no[0] <= jk:jk_bcd0.q_no
+q_no[1] <= jk:jk_bcd1.q_no
+q_no[2] <= jk:jk_bcd2.q_no
+q_no[3] <= jk:jk_bcd3.q_no
+
+
+|bcd2|jk:jk_bcd0
+clk_i => q_o~reg0.CLK
+reset_i => ~NO_FANOUT~
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_no <= <GND>
+
+
+|bcd2|jk:jk_bcd1
+clk_i => q_o~reg0.CLK
+reset_i => ~NO_FANOUT~
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_no <= <GND>
+
+
+|bcd2|jk:jk_bcd2
+clk_i => q_o~reg0.CLK
+reset_i => ~NO_FANOUT~
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_no <= <GND>
+
+
+|bcd2|jk:jk_bcd3
+clk_i => q_o~reg0.CLK
+reset_i => ~NO_FANOUT~
+j_i => Mux0.IN3
+k_i => Mux0.IN4
+q_o <= q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_no <= <GND>
+
+

@@ -1,0 +1,89 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\altera\13.0sp1\DSD_4CV5\Proyectos\FFD\FFD_Serialin_Parealelout\simulation\modelsim
+vDivFreq
+I<gKg3k4VN`mS@cjkgcM763
+VH[[D]H=QOHIQKn:_Ehf5_3
+Z1 dD:\altera\13.0sp1\DSD_4CV5\Proyectos\FFD\FFD_Serialin_Parealelout\simulation\modelsim
+w1708612394
+8D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD/FFD_Serialin_Parealelout/DivFreq.v
+FD:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD/FFD_Serialin_Parealelout/DivFreq.v
+L0 13
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD/FFD_Serialin_Parealelout -O0
+n@div@freq
+!i10b 1
+!s100 CH0M]STiJW?Ge0h_IOU<]2
+!s85 0
+!s108 1709162173.016000
+!s107 D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD/FFD_Serialin_Parealelout/DivFreq.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD/FFD_Serialin_Parealelout|D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD/FFD_Serialin_Parealelout/DivFreq.v|
+!s101 -O0
+vFDD_FPGA
+!i10b 1
+!s100 Bk]`0Y508g7kVQF_OC@N43
+I8eSZ?18QDzbcL3HLlIO6>3
+VSH7[EE?j71jD;Pn2@Dazb3
+R1
+Z5 w1709162146
+Z6 8D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD/FFD_Serialin_Parealelout/FDD_FPGA.v
+Z7 FD:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD/FFD_Serialin_Parealelout/FDD_FPGA.v
+L0 2
+R2
+r1
+!s85 0
+31
+Z8 !s108 1709162173.258000
+Z9 !s107 D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD/FFD_Serialin_Parealelout/FDD_FPGA.v|
+Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD/FFD_Serialin_Parealelout|D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD/FFD_Serialin_Parealelout/FDD_FPGA.v|
+!s101 -O0
+R3
+R4
+n@f@d@d_@f@p@g@a
+vFDD_FPGA_tv
+!i10b 1
+!s100 Z@el5YOh1_0G>KB9kRJQS2
+In=7o7Ra20iJ6jNoUX`1SL3
+Vz_cDzef7CUg0_E8miOWR72
+R1
+R5
+R6
+R7
+L0 63
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+R3
+R4
+n@f@d@d_@f@p@g@a_tv
+vFFD
+I8<?DIYb`VLjDnaAdl;n<01
+V1WTCg?X[4_J^JkLVk<lk:2
+R1
+w1708612269
+8D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD/FFD_Serialin_Parealelout/FFD.v
+FD:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD/FFD_Serialin_Parealelout/FFD.v
+L0 13
+R2
+r1
+31
+R3
+n@f@f@d
+R4
+!i10b 1
+!s100 dN75aIhQ]66kha5dSCP4n0
+!s85 0
+!s108 1709162172.717000
+!s107 D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD/FFD_Serialin_Parealelout/FFD.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD/FFD_Serialin_Parealelout|D:/altera/13.0sp1/DSD_4CV5/Proyectos/FFD/FFD_Serialin_Parealelout/FFD.v|
+!s101 -O0

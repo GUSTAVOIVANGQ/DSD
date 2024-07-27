@@ -1,0 +1,17 @@
+module bcd(
+    input clk,
+    input reset,
+    output reg [3:0] bcd
+);
+
+    always @(posedge clk or posedge reset)
+    begin
+        if (reset)
+            bcd <= 4'b0000; // Reiniciar contador a 0
+        else if (bcd == 4'b1001) // Valor máximo 9
+            bcd <= 4'b0000; // Reiniciar a 0
+        else
+            bcd <= bcd + 4'b0001; // Incrementar en 1
+    end
+
+endmodule

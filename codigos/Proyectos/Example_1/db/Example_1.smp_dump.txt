@@ -1,0 +1,6 @@
+
+State Machine - |Example_3|current_state
+Name current_state.STATE_GREEN current_state.STATE_RED current_state.STATE_YELLOW 
+current_state.STATE_GREEN 0 0 0 
+current_state.STATE_YELLOW 1 0 1 
+current_state.STATE_RED 1 1 0 

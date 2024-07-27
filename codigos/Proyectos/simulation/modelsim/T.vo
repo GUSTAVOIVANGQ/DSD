@@ -1,0 +1,107 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
+
+// DATE "04/10/2024 17:20:14"
+
+// 
+// Device: Altera 5M240ZT100C5 Package TQFP100
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module T (
+	switch_i,
+	push_i,
+	led1_o,
+	led2_o);
+input 	switch_i;
+input 	push_i;
+output 	led1_o;
+output 	led2_o;
+
+// Design Ports Information
+// push_i	=>  Location: PIN_85,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// switch_i	=>  Location: PIN_26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// led1_o	=>  Location: PIN_99,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// led2_o	=>  Location: PIN_100,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("T_v.sdo");
+// synopsys translate_on
+
+wire \push_i~combout ;
+wire \switch_i~combout ;
+
+
+// Location: PIN_85,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \push_i~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\push_i~combout ),
+	.padio(push_i));
+// synopsys translate_off
+defparam \push_i~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \switch_i~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\switch_i~combout ),
+	.padio(switch_i));
+// synopsys translate_off
+defparam \switch_i~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_99,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \led1_o~I (
+	.datain(\push_i~combout ),
+	.oe(vcc),
+	.combout(),
+	.padio(led1_o));
+// synopsys translate_off
+defparam \led1_o~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_100,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \led2_o~I (
+	.datain(\switch_i~combout ),
+	.oe(vcc),
+	.combout(),
+	.padio(led2_o));
+// synopsys translate_off
+defparam \led2_o~I .operation_mode = "output";
+// synopsys translate_on
+
+endmodule

@@ -1,0 +1,49 @@
+module rom(
+	input				clk_i,
+	input				rst_i,
+	input				j_i,
+	input				k_i,
+	output	[3:0] q_o,
+	output	[3:0]		qn_o
+	
+	);
+	//Seccion de declaracion de señales intermedias
+	wire	jb3_w;
+	
+	FFJK ffjk_b0(
+	.clk_i		(clk_i),
+	.rst_i		(rst_i),
+	.j_i			(j_i),
+	.k_i			(k_i),
+	.q_o			(q_o[0]),
+	.qn_o			(qn_o[0])
+	);
+	FFJK ffjk_b1(
+	.clk_i		(q_o[0]),
+	.rst_i		(rst_i),
+	.j_i			(j_i),
+	.k_i			(k_i),
+	.q_o			(q_o[1]),
+	.qn_o			(qn_o[1])
+	);
+	FFJK ffjk_b2(
+	.clk_i		(q_o[1]),
+	.rst_i		(rst_i),
+	.j_i			(j_i),
+	.k_i			(k_i),
+	.q_o			(q_o[2]),
+	.qn_o			(qn_o[2])
+	);
+	
+	//AND Gate
+	and and_u0 (jb3_w,q_o[1], q_o[2]);
+	
+	FFJK ffjk_b3(
+	.clk_i		(q_o[0]),
+	.rst_i		(rst_i),
+	.j_i			(jb3_w),
+	.k_i			(k_i),
+	.q_o			(q_o[3]),
+	.qn_o			(qn_o[3])
+	);
+endmodule
